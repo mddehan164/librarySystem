@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="logo" id="logo"><a href="#home-page">Logo</a></div>
+        <div class="nav-items">
+            <i class="ri-menu-line" id="menuBtn"></i>
+            <a class="nav-link" id="departmentBtn" href="#departments">Departments</a>
+            <a class="nav-link" href="#aboutUs">About Us</a>
+            <a class="nav-link" href="#contactUs">Contact Us</a>
+            <a class="nav-link" href="#login" id="navLogin">Login</a>
+        </div>
+    </nav>
+    <div class="side-bar">
+        <i class="ri-close-large-fill" id="closeBtn"></i>
+        <a href="#departments">Departments</a>
+        <a href="#aboutUs">About Us</a>
+        <a href="#contactUs">Contact Us</a>
+        <a href="#login" id="sideBarLogin">Login</a>
+    </div>
+    <main>
+        <div id="home-page">
+            <div class="bg-illustrator">
+                <img src="images/illustrator.png" alt="">
+            </div>
+            <div class="text">
+                <div id="vanishForSignup">
+                    <h2>Wellcome to</h2>
+                    <h1><span style="color: #2bec4b;">On</span>line <span style="color: #4217ee;">Library</span> </h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, doloribus hic autem ullam id fuga magni velit. Inventore voluptatibus eos aspernatur sint iure? Odio, perferendis. Rem quisquam voluptas, placeat libero quia nesciunt quod? Optio, eveniet? Quisquam molestiae quasi eum vero fugit doloribus iusto voluptatibus expedita dolores ipsam, dolor cumque aperiam aliquam voluptate odit.</p>
+                    <button id="getStarted">
+                        Get Started
+                    </button>
+                </div>
+                <form id="signUp">
+                    <h1><span style="color: #2bec4b;">On</span>line <span style="color: #4217ee;">Library</span> </h1>
+                    <label for="Name">Name</label>
+                    <input type="text" placeholder="Your Name"><br>
+                    <label for="Department">Department</label>
+                    <input type="text" placeholder="Department Name"><br>
+                    <label for="status">Status</label>
+                    <input type="text" placeholder="Study Status"><br>
+                    <label for="id">Student ID</label>
+                    <input type="text" placeholder="Study Status"><br>
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Your Email"><br>
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Set a Password"><br>
+                    <button id="signUpBtn"> Sign In</button>
+                </form>
+            </div>
+        </div>
+        <div id="login-box">
+            <video autoplay loop muted class="bg-login-video">
+                    <source src="videos/login.mp4" type="video/mp4">
+                </video>
+            <form id="login-form">
+                <label for="Email">E-mail</label><br>
+                <input type="email" placeholder="Your e-mail"><br>
+                <label for="ID">Student ID</label><br>
+                <input type="number" placeholder="Your ID"><br>
+                <label for="password">Password</label><br>
+                <input type="password" placeholder="Your Password"><br>
+                <button id="loginBtn">Login</button>
+            </form>
+        </div>
+
+        <div id="departments">
+            <h1>Choose Your <span style="color: #034ef1;">Department</span></h1>
+            <input type="text" name="" id="searchBox" placeholder="Search"><button id="searchButton">Search</button>
+            <h1>Departments of <span style="color: #03cdf1;">RU</span></h1>
+            <div class="depart-parent">
+                <div class="depart-box">
+                    <h3>Faculty of Arts</h3>
+                    <div class="depart-names">
+                        <div class="depart-child">
+                            <img src="images/philosophy.jpg" alt="">
+                            <h5>Department of Philosophy</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="images/History.jpg" alt="">
+                            <h5>Department of History</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="images/English.jpg" alt="">
+                            <h5>Department of English</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="images/Bangla.jpg" alt="">
+                            <h5>Department of Bangla</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="images/IslamicHistory.jpg" alt="">
+                            <h5>Department of Islamic History & Culture</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="images/Arabic.jpg" alt="">
+                            <h5>Department of Arabic</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="images/IslamicStudies.jpg" alt="">
+                            <h5>Department of Islamic Studies</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="images/Theatre.jpg" alt="">
+                            <h5>Department of Theatre</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="images/Music.jpg" alt="">
+                            <h5>Department of Music</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="images/Persian.jpg" alt="">
+                            <h5>Department of Persian Language & Literature</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="images/Sanskrit.jpg" alt="">
+                            <h5>Department of Sanskrit</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="images/urdu.jpg" alt="">
+                            <h5>Department of Urdu</h5>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="depart-box">
+                    <h3>Faculty of Law</h3>
+                    <div class="depart-names">
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Law</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Law & Land Administration</h5>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="depart-box">
+                    <h3>Faculty of Science</h3>
+                    <div class="depart-names">
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Mathematics</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Physics</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Chemistry</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Statics</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Biochemistry & Molecular Biology</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Pharmacy</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Population Science & Human Resource Development</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Applied Mathematics</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Physical Education & Sports Science</h5>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="depart-box">
+                    <h3>Faculty of Business Studies</h3>
+                    <div class="depart-names">
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Accounting & Information System</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Management Studies</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Marketing</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Finance</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Banking & Insurance</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Tourism & Hospitality Management</h5>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="depart-box">
+                    <h3>Faculty of Social Science</h3>
+                    <div class="depart-names">
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Economics</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Political Science</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Social Work</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Sociology</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Mass Communication & Journalism</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Information Science & Library Management</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Public Administration</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Anthropology</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Folklore</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of International Relations</h5>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="depart-box">
+                    <h3>Faculty of Agriculture</h3>
+                    <div class="depart-names">
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Agronomy & Agricultural Extention</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Crop Science & Technology</h5>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="depart-box">
+                    <h3>Faculty of Engineering</h3>
+                    <div class="depart-names">
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Applied Chemistry & Chemical Engineering</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Computer Science & Engineering</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Information & Communication Engineering</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Materials Science & Engineering</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Electrical & Electronic Engineering</h5>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="depart-box">
+                    <h3>Faculty of Fine Arts</h3>
+                    <div class="depart-names">
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Painting, Oriental Art & Printmaking</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Ceramics & Sculpture</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Graphic Design, Crafts & History of Art</h5>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="depart-box">
+                    <h3>Faculty of Biological Science</h3>
+                    <div class="depart-names">
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Psychology</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Botany</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Zoology</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Genetic Engineering & Biotechnology</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of clinical Psychology</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Microbiology</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="depart-box">
+                    <h3>Faculty of Geoscience</h3>
+                    <div class="depart-names">
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Geography & Environmental Studies</h5>
+                        </div>
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Geology & Mining</h5>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="depart-box">
+                    <h3>Faculty of Fisheries</h3>
+                    <div class="depart-names">
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Fisheries</h5>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="depart-box">
+                    <h3>Faculty of Veterinary and Animal Science</h3>
+                    <div class="depart-names">
+                        <div class="depart-child">
+                            <img src="" alt="">
+                            <h5>Department of Veterinary & Animal Science</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <video autoplay loop muted class="bg-department-video">
+                <source src="videos/department.mp4" type="video/mp4">
+            </video>
+            <h2>Let's Gets Started</h2>
+        </div>
+    </main>
+
+    <footer>&copy Copy Right-----</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
