@@ -24,7 +24,7 @@
     </nav>
     <div class="side-bar">
         <i class="ri-close-large-fill" id="closeBtn"></i>
-        <a href="#departments">Departments</a>
+        <a href="#departments" id="sideBarDepartments">Departments</a>
         <a href="#aboutUs">About Us</a>
         <a href="#contactUs">Contact Us</a>
         <a href="#login" id="sideBarLogin">Login</a>
@@ -61,25 +61,28 @@
                 </form>
             </div>
         </div>
-        <div id="login-box">
-            <video autoplay loop muted class="bg-login-video">
-                    <source src="videos/login.mp4" type="video/mp4">
-                </video>
-            <form id="login-form">
-                <label for="Email">E-mail</label><br>
-                <input type="email" placeholder="Your e-mail"><br>
-                <label for="ID">Student ID</label><br>
-                <input type="number" placeholder="Your ID"><br>
-                <label for="password">Password</label><br>
-                <input type="password" placeholder="Your Password"><br>
-                <button id="loginBtn">Login</button>
-            </form>
+        <div class="login">
+            <div id="login-box">
+                <div class="bg-video">
+                    <video autoplay loop muted class="bg-login-video">
+                        <source src="videos/login.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <form id="login-form">
+                    <label for="Email">E-mail</label><br>
+                    <input type="email" placeholder="Your e-mail"><br>
+                    <label for="ID">Student ID</label><br>
+                    <input type="number" placeholder="Your ID"><br>
+                    <label for="password">Password</label><br>
+                    <input type="password" placeholder="Your Password"><br>
+                    <button id="loginBtn">Login</button>
+                </form>
+            </div>
         </div>
 
         <div id="departments">
             <h1>Choose Your <span style="color: #034ef1;">Department</span></h1>
             <input type="text" name="" id="searchBox" placeholder="Search"><button id="searchButton">Search</button>
-            <h1>Departments of <span style="color: #03b9f1;">RU</span></h1>
             <div class="depart-parent">
                 <div class="depart-box">
                     <h3>Faculty of Arts</h3>
@@ -405,7 +408,7 @@
         </div>
     </main>
 
-    <footer>&copy Copy Right-----</footer>
+    <footer><img src="images/footer.png" alt="">&copy Copy Right-----</footer>
 
     <script src="script.js"></script>
 </body>

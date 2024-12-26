@@ -201,19 +201,43 @@ main{
 #signUp{
     display:none;
 }
-#login-box{
+.login{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    height: auto;
+    
+}
+#login-box{
+    position: relative;
+    margin-top: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: auto;
     display: none;
 }
+.bg-video{
+    width: 100%;
+    height: auto;
+}
+.bg-login-video{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    z-index: -1;
+    width: 100%;
+    object-fit: fill;
+    object-position: center;
+    border-radius: 1.1vw;
+}
 #login-form{
-    width: 50%;
-    height: 50%;
-    margin-top: 10%;
-    margin-left: 39%;
+    width: 100%;
+    padding-top: 12%;
+    padding-left: 30%;
+    display: block;
 }
 #login-form label{
     font-size: 1.5vw;
@@ -241,7 +265,7 @@ main{
     opacity: 0.3;
 }
 #loginBtn{
-    margin: 5% 0 0 20%;
+    margin: 5% 0 0 16%;
     padding: 2% 5%;
     font-size: 1.1vw;
     font-weight: bold;
@@ -253,14 +277,7 @@ main{
     background-image: linear-gradient(45deg, #53d7ff,  #4486fb);
     color: #fff;
 }
-.bg-login-video{
-    position: absolute;
-    top: -15%;
-    right: 23%;
-    z-index: -1;
-    width: 50%;
-    border-radius: 1.1vw;
-}
+
 
 
 #departments{
@@ -358,7 +375,7 @@ main{
 .depart-child img{
     border: 2px solid rgb(233, 233, 233);
     width: 30%;
-    height: 140px;
+    height: 7vw;
     object-fit: fill;
     margin: 1%;
 }
@@ -376,12 +393,11 @@ main{
 
 #departments h2{
     font-size: 2vw;
+    text-align: center;
     background-image: linear-gradient(90deg ,hsl(224, 88%, 50%),#50c2f7);
     color: transparent;
     -webkit-background-clip:text;
-    margin-left: 42%;
-    margin-bottom: 4%;
-    width: 30%;
+    padding-bottom: 5%;
 }
 
 .bg-department-video{
@@ -398,13 +414,21 @@ main{
 
 
 footer{
-    position: fixed;
-    bottom: 0;
+    margin-top: 18%;
     padding: 1% 0;
-    font-size: 0.5;
-    font-weight: bold;
-    background-image: linear-gradient(45deg, #63cdf0,#37b6e0,  #285ef1);
+    font-size: 1vw;
     width: 100%;
     text-align: center;
-    opacity: 0.5;
+    position: relative;
+    font-weight: bold;
+    color: #14082c;
+
+}
+footer img{
+    object-fit: fill;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.4;
 }

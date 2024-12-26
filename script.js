@@ -73,6 +73,7 @@ logoBtn.addEventListener('click', function(){
 
 let departmentBtn = document.getElementById('departmentBtn');
 let departments = document.getElementById('departments');
+let sideBarDepartments = document.getElementById('sideBarDepartments');
 
 
 departmentBtn.addEventListener('click', function(){
@@ -83,6 +84,13 @@ departmentBtn.addEventListener('click', function(){
 
 })
 
+    sideBarDepartments.addEventListener('click', function(){
+    homePage.style.display = 'none';
+    loginBox.style.display = 'none';
+    sideBar.style.display = 'none';
+    menuBtn.style.display = 'initial';
+    departments.style.display = 'block';
+})
 
 //handle department boxes
 

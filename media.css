@@ -118,51 +118,175 @@
         display:none;
     }
 
+
     #login-box{
-        width: 70%;
+    position: relative;
+    margin-top: 0;
+    width: 100%;
+    top: 0;
     }
     #login-form{
         width: 100%;
         height: auto;
-        margin-top: 25%;
-        margin-left: 22%;
+        margin-top: 15%;
+        margin-left: 0%;
+        padding: 2% 1.5%;
+        display: flex;
+        flex-wrap: wrap;
     }
     #login-form label{
-        display: inline;
-        font-size: 5vw;
+        display: block;
+        font-size: 6vw;
+        width: 33%;
+        padding: 2.5% 0;
+        margin-left: 2%;
     }
     #login-form input{
-        width: 100%;
-        padding: 2% 0%;
-        margin: 1% 0;
-        border-radius: 1vw;
+        width: 60%;
+        padding: 3% 0%;
+        margin: 2px 1.5%;
+        border-radius: 2vw;
         font-size: 5vw;
-        opacity: 0.4;
+        opacity: 0.7;
     }
     #login-form input::placeholder{
-        font-size: 4vw;
+        font-size: 5vw;
     }
     #loginBtn{
-        margin: 5% 0 0 36%;
+        margin: 5% 0 0 40%;
         padding: 2.5% 5%;
         font-size: 4.5vw;
         border-radius: 1vw;
     }
     .bg-login-video{
         position: fixed;
-        top: 9%;
+        top: 8%;
         right: 0%;
         z-index: -1;
         width: 100%;
         border-radius: 1vw;
-        transform: scale(1.25);
+        transform: scaleY(1.5);
+    }
+
+
+    #departments{
+        position: relative;
+        width: 100%;
+        margin-top: 20%;
+        
+    }
+    #departments h1{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        font-size: 10vw;
+        font-weight: bold;
+    }
+     #searchBox{
+        width: 35%;
+        padding: 4% 2%;
+        margin: 2% 1%  1.5% 19%;
+        font-size: 5vw;
+        border: none;
+        border-radius: 2vw;
+        background-image: linear-gradient(-90deg, #bfe7fa, #bcd1ff);
+    }
+    #searchBox::placeholder{
+        text-align: center;
+        opacity: 0.5;
+        color: #034ef1;
+    }
+    #searchBox:focus{
+        outline: none;
+        padding: 4% 3%;
+    }
+    #searchButton{
+        width: 25%;
+        padding: 4% 3%;
+        margin: 0 0 0 1%;
+        font-size: 5vw;
+        border: none;
+        border-radius: 2vw;
+    }
+
+
+    .depart-box{
+        width: 95%;
+        margin-top: 15%;
+        border-radius: 10px;
+    }
+    .depart-box h3{
+        font-size: 5.5vw;
+        text-align: center;
+        padding: 0;
+        margin-top: 5%;
+    }
+    .depart-names{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .depart-child{
+        border: 1px solid #e0e0e0;
+        width: 100%;
+        display: initial;
+        margin: 3% 1%;
+        padding: 1%;   
+    }
+    .depart-child img{
+        border: 2px solid rgb(233, 233, 233);
+        width: 98%;
+        height: 56vw;
+    }
+    .depart-child h5{
+        font-size: 5.5vw;
+        display: block;
+        width: 95%;
+        padding: 3% 0%;
+        text-align: center;
+        margin: 1.5% 2%;
     }
     
+    
+    .bg-department-video{
+        width: 90%;
+        margin: 15% 5%;
+        border-radius: 3vw;
+        border-top: 5px solid #034ef1;
+    }
+    .bg-department-video:hover{
+        scale: 1.02;
+    }
+
+    
+    #departments h2{
+        font-size: 5vw;
+        text-align: center;
+        margin-left: 28%;
+        margin-bottom: 10%;
+        display: initial;
+        padding: 0;
+    }
+
 
     footer{
-        padding: 2% 0;
+        margin-top: 10%;
+        padding: 25% 0 0 0;
+        font-size: 5vw;
+        width: 100%;
         text-align: center;
-        font-size: 4vw;
+        font-weight: bold;
+        color: #14082c;
+    
+    }
+    footer img{
+        object-fit: fill;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        opacity: 0.7;
     }
 }
 
@@ -179,6 +303,10 @@
         padding: 1.5vw;
         margin: 0 1vw;
         font-size: 2vw;
+    }
+
+    #menuBtn{
+        display: none;
     }
 
 
@@ -250,56 +378,575 @@
         font-size: 1.8vw;
     }
     #login-box{
+        position: relative;
+        margin-top: 0;
         width: 100%;
-        height: 100%;
+        top: 0;
+        }
+        #login-form{
+            width: 100%;
+            height: auto;
+            margin-top: 15%;
+            margin-left: 0%;
+            padding: 2% 1.5%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #login-form label{
+            display: block;
+            font-size: 6vw;
+            width: 33%;
+            padding: 2.5% 0;
+            margin-left: 2%;
+        }
+        #login-form input{
+            width: 60%;
+            padding: 3% 0%;
+            margin: 2px 1.5%;
+            border-radius: 2vw;
+            font-size: 5vw;
+            opacity: 0.7;
+        }
+        #login-form input::placeholder{
+            font-size: 5vw;
+        }
+        #loginBtn{
+            margin: 5% 0 0 40%;
+            padding: 2.5% 5%;
+            font-size: 4.5vw;
+            border-radius: 1vw;
+        }
+        .bg-login-video{
+            position: fixed;
+            top: 8%;
+            right: 0%;
+            z-index: -1;
+            width: 100%;
+            border-radius: 1vw;
+            transform: scaleY(1.5);
+        }
+    
+    
+        #departments{
+            position: relative;
+            width: 100%;
+            margin-top: 15%;
+            
+        }
+        #departments h1{
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin: 0;
+            font-size: 6vw;
+        }
+         #searchBox{
+            width: 35%;
+            padding: 2% 2%;
+            margin: 2% 1%  1.5% 21%;
+            font-size: 3vw;
+            border-radius: 1vw;
+        }
+        #searchButton{
+            width: 20%;
+            padding: 2% 3%;
+            margin: 0 0 0 1%;
+            font-size: 3vw;
+            border-radius: 1vw;
+        }
+    
+    
+        .depart-box{
+            width: 92%;
+            margin-top: 10%;
+            border-radius: 10px;
+        }
+        .depart-box h3{
+            font-size: 4vw;
+            text-align: center;
+            padding: 0;
+            margin-top: 5%;
+        }
+        .depart-child{
+            border: 1px solid #e0e0e0;
+            width: 90%;
+            display: initial;
+            margin: 3% 5%;
+            padding: 1%;   
+        }
+        .depart-child img{
+            border: 2px solid rgb(233, 233, 233);
+            width: 90%;
+            height: 50vw;
+            margin: 5%;
+        }
+        .depart-child h5{
+            font-size: 4.5vw;
+            display: block;
+            width: 95%;
+            padding: 3% 0%;
+            text-align: center;
+            margin: 2% 2%;
+        }
+        
+        
+        .bg-department-video{
+            width: 92%;
+            margin: 15% 4%;
+            border-radius: 3vw;
+            border-top: 5px solid #034ef1;
+        }
+    
+        
+        #departments h2{
+            font-size: 5vw;
+            text-align: center;
+            margin-left: 28%;
+            margin-bottom: 10%;
+            display: initial;
+            padding: 0;
+        }
+    
+    
+        footer{
+            margin-top: 10%;
+            padding: 25% 0 0 0;
+            font-size: 5vw;
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+            color: #14082c;
+        
+        }
+        footer img{
+            object-fit: fill;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            opacity: 0.7;
+        }
     }
-    #login-form{
-        width: 50%;
-        height: 50%;
-        margin-top: 15%;
-        margin-left: 38%;
-    }
-    #login-form label{
-        font-size: 2vw;
-    }
-    #login-form input{
-        width: 50%;
-        border-radius: 0.6vw;
-        font-size: 1.8vw;
-        opacity: 0.6;
-    }
-    #login-form input::placeholder{
-        font-size: 1.8vw;
-    }
-    #loginBtn{
-        margin: 4% 0 0 20%;
-        padding: 2.5% 5%;
-        font-size: 1.8vw;
-    }
-    .bg-login-video{
-        position: absolute;
-        top: -4%;
-        right: 19%;
-        z-index: -1;
-        width: 60%;
-        border-radius: 1.1vw;
-    }
+    
+    
+@media (min-width:577px) and (max-width:768px) {
+        .nav-bar{
+            width: 100%;
+            padding: 2.2% 1%;
+        }
+        .logo a{
+            font-size: 3vw;
+        }
+        .nav-link{
+            padding: 1.5vw;
+            margin: 0 1vw;
+            font-size: 2vw;
+        }
+    
+        #menuBtn{
+            display: none;
+        }
+    
+    
+        #home-page{
+            margin-top: 8%;
+            background-size: 35%;
+            background-position: 115% 30%;
+        }
+        .bg-illustrator{
+            width: 50%;
+        }
+        .bg-illustrator img{
+            width: 93%;
+            margin-top: 15%;
+        }
+        .text{
+            width: 50%;
+        }
+        .text h2{
+            margin-top: 10%;
+            font-size:4vw;
+            
+        }
+        .text h1{
+            font-size: 5vw;
+            margin: 5% 0;
+        }
+        .text p{
+            font-size: 2vw;
+        }
+        #getStarted{
+            margin-top: 6%;
+            padding: 3% 4%;
+            font-size: 3vw;
+        }
+    
+    
+    
+        #signUp{
+            margin: 6% 1%;
+            padding: 5% 3%;
+            background-position:  100% 40%;
+            background-repeat: no-repeat;
+        }
+        #signUp h1{
+            margin: 2% 0 8% 10%;
+            padding: 0 0 3% 0;
+        }
+        #signUp label{
+            width: 25%;
+            font-size: 2vw;
+        }
+        #signUp input{
+            width: 60%;
+            padding: 2% 1%;
+            margin: 1% 0;
+            font-size: 1.8vw;
+            opacity: 0.3;
+            border: none;
+            border-radius: 0.7vw;
+        }
+        #signUp input::placeholder{
+            font-size: 1.8vw;
+        }
+        #signUpBtn{
+            margin: 4% 0 0 62.5%;
+            padding: 3% 6%;
+            border-radius: 0.7vw;
+            font-size: 1.8vw;
+        }
+
+        #login-box{
+            margin-top: 22%;
+            width: 100%;
+            height: auto;
+        }
+        .bg-login-video{
+            top: 18%;
+            left: 10%;
+            z-index: -1;
+            width: 80%;
+            border-radius: 1.1vw;
+            transform: scaleY(1);
+        }
+        #login-form{
+            width: 80%;
+            height: auto;
+            margin-top: 0%;
+            margin-left: 10%;
+        }
+        #login-form label{
+            font-size: 3vw;
+        }
+        #login-form input{
+            width: 60%;
+            border-radius: 0.6vw;
+            font-size: 2.5vw;
+            opacity: 0.6;
+            margin: 1%;
+        }
+        #login-form input::placeholder{
+            font-size: 2.5vw;
+        }
+        #loginBtn{
+            margin: 4% 0 0 78%;
+            padding: 2.5% 5%;
+            font-size: 2.5vw;
+        }
+
+        #departments{
+            position: relative;
+            width: 100%;
+            margin-top: 15%;
+            
+        }
+        #departments h1{
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin: 0;
+            font-size: 6vw;
+        }
+         #searchBox{
+            width: 35%;
+            padding: 2% 2%;
+            margin: 2% 1%  1.5% 21%;
+            font-size: 3vw;
+            border-radius: 1vw;
+        }
+        #searchButton{
+            width: 20%;
+            padding: 2% 3%;
+            margin: 0 0 0 1%;
+            font-size: 3vw;
+            border-radius: 1vw;
+        }
+    
+    
+        .depart-box{
+            width: 90%;
+            margin-top: 10%;
+            border-radius: 10px;
+        }
+        .depart-box h3{
+            font-size: 4.5vw;
+            text-align: center;
+            padding: 0;
+            margin-top: 5%;
+        }
+        .depart-child{
+            border: 1px solid #e0e0e0;
+            width: 80%;
+            display: initial;
+            margin: 3% 10%;
+            padding: 1%;   
+        }
+        .depart-child img{
+            border: 2px solid rgb(233, 233, 233);
+            width: 90%;
+            height: 45vw;
+            margin: 5%;
+        }
+        .depart-child h5{
+            font-size: 4vw;
+            display: block;
+            width: 95%;
+            padding: 3% 0%;
+            text-align: center;
+            margin: 2% 2%;
+        }
+      
+    
 
 
     footer{
-        padding: 1% 0;
-        text-align: left;
-        position: fixed;
-        bottom: 0% ;
-        right: 0;
-        width: 100%;
-        text-align: center;
+        margin-top: 6%;
+        padding-top: 15%;
+        font-size: 3vw;
     }
     
 }
 
+@media (min-width:769px) and (max-width:992px){
+    .nav-bar{
+        width: 100%;
+    }
+    .logo a{
+        font-size: 4vw;
+        font-weight: bold;
+    }
+    .nav-link{
+        padding: 1.8vw 2vw;
+        margin: 0 0.5vw;
+        font-weight: bold;
+        font-size: 2vw;
+    }
+    .nav-link:hover{
+        background-image: linear-gradient(45deg, #1ebbeb,  #035af1);
+        color: #fff;
+    }
+    #menuBtn{
+        display: none;
+    }
 
-@media (min-width:769px) and (max-width:1880px) {
+    #home-page{
+        background-position: 130%;
+        background-size: 35%;
+    }
+    .bg-illustrator{
+        width: 65%;
+    }
+    .bg-illustrator img{
+        width: 90%;
+        margin-top: 20%;
+    }
+    .text{
+        width: 35%;
+        font-size: 3;
+    }
+    .text h2{
+        margin-top: 30%;
+        font-size: 3vw;
+    }
+    .text h1{
+        margin: 10% 0;
+    }
+    .text p{
+        font-size: 1.8vw;
+        color: #190000;
+    }
+    #getStarted{
+        margin-top: 10%;
+        padding: 6% 8%;
+        border-radius: 1vw;
+        font-size: 2vw;
+        cursor: pointer;
+    }
+
+
+    #signUp{
+        box-sizing: border-box;
+        margin: 6% 1%;
+        padding: 5% 3%;
+        background-image: url("images/nav.png");
+        background-size: 100%;
+        background-position:  100% 51%;
+        background-repeat: no-repeat;
+    }
+    #signUp h1{
+        margin: 30% 0 10% 5%;
+        padding: 0 0 3% 0;
+    }
+    #signUp label{
+        display: inline-block;
+        width: 30%;
+        font-size: 1.8vw;
+    }
+    #signUp input{
+        width: 60%;
+        padding: 3% 1%;
+        margin: 1% 0;
+        font-size: 1vw;
+        opacity: 0.5;
+    }
+    #signUp input::placeholder{
+        color: #010d11;
+        font-size: 1.5vw;
+    }
+    #signUpBtn{
+        margin: 4% 0 0 60%;
+        padding: 3% 6%;
+        border-radius: 0.6vw;
+        font-size: 1.8vw;
+        font-weight: bold;
+        background-image: linear-gradient(-45deg, #53d7ff,  #4486fb);
+        cursor: pointer;
+    }
+
+    #login-box{
+        position: relative;
+        margin-top: 10%;
+        width: 80%;
+        padding: 0;
+
+    }
+    #login-form{
+        width: 100%;
+        margin-top: 0%;
+        margin-left: 0%;
+        padding-left: 0;
+        padding-top: 10%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #login-form label{
+        font-size: 3vw;
+        width: 20%;
+        padding-top: 2%;
+        margin-left: 7%;
+    }
+    #login-form input{
+        width: 65%;
+        border-radius: 0.6vw;
+        font-size: 2.5vw;
+        opacity: 0.6;
+        margin: 1%;
+    }
+    #login-form input::placeholder{
+        font-size: 2.5vw;
+    }
+    #loginBtn{
+        margin: 4% 0 0 75%;
+        padding: 2% 4.5%;
+        font-size: 2.5vw;
+    }
+
+    #departments{
+        margin-top: 12%; 
+    }
+    #departments h1{
+        font-size: 3.5vw;
+    }
+     #searchBox{
+        width: 20%;
+        padding: 2% 0;
+        margin: 0 0  1.5% 35%;
+        font-size: 1.5vw;
+        border: none;
+        border-radius: 1vw;
+    }
+    #searchButton{
+        padding: 2% 0;
+        margin: 0 0 0 1%;
+        font-size: 1.5vw;
+        border-radius: 0.6vw;
+    }
+    .depart-parent{
+        width: 100%;  
+    }
+    .depart-box{
+        width: 95%;
+        margin-top: 5%;
+    }
+    .depart-box h3{
+        font-size: 2.5vw;
+        margin-top: 2%;
+    }
+    .depart-names{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 2% 0;
+        padding: 1%;
+    }
+    .depart-child{
+        border: 1px solid #e0e0e0;
+        width: 49%;
+        margin: 1% 0;
+        padding: 0;
+        
+    }
+    .depart-child img{
+        border: 2px solid rgb(233, 233, 233);
+        width: 40%;
+        height: 12vw;
+    }
+    .depart-child h5{
+        font-size: 1.8vw;
+        display: block;
+        width: 55%;
+        padding: 8% 0%;
+        margin: 1.5% 2%;;
+    }
+    
+    #departments h2{
+        font-size: 3vw;
+    }
+    
+    .bg-department-video{
+        width: 60%;
+        margin: 8% 20%;
+        border-radius: 1vw;
+        border-top: 4px solid #034ef1;
+    }
+    
+    
+    footer{
+        margin-top: 18%;
+        padding: 1% 0;
+        font-size: 2vw;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        font-weight: bold;
+        color: #14082c;
+    
+    }
+}
+
+
+
+@media (min-width:992px){
     #home-page{
         background-size: 30%;
         background-position: 117%;
