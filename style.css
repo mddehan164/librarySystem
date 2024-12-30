@@ -384,7 +384,7 @@ main{
     transition: all ease 0.5s;
 }
 .depart-child h5{
-    font-size: 1.2vw;
+    font-size: 1vw;
     display: block;
     width: 60%;
     padding: 8% 1%;
