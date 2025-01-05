@@ -69,7 +69,8 @@ logoBtn.addEventListener('click', function(){
 })
 
 
-// handle departments
+// handle departments 
+//department btn is a faculty btn
 
 let departmentBtn = document.getElementById('departmentBtn');
 let departments = document.getElementById('departments');
@@ -83,6 +84,7 @@ departmentBtn.addEventListener('click', function(){
     sideBar.style.display = 'none';
     facParent.style.display = 'flex';
     depDialog.style.display = 'none';
+    document.getElementById('minimize').style.display = 'initial';
     deparBoxArr.forEach((e)=>{
         e.style.display = 'none';
         document.getElementById('choose').innerText = 'Faculty';
