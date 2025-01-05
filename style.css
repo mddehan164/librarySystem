@@ -295,40 +295,53 @@ main{
     font-size: 2.5vw;
     font-weight: bold;
 }
- #searchBox{
-    width: 15%;
-    padding: 1% 0;
-    margin: 0 0  1.5% 38%;
-    font-size: 1vw;
-    border: none;
-    border-radius: 0.3vw;
-    background-image: linear-gradient(-90deg, #bfe7fa, #bcd1ff);
-}
-#searchBox::placeholder{
-    text-align: center;
-    color: #034ef1;
-}
-#searchBox:focus{
-    outline: none;
-    padding: 1% 0.5%;
-}
-#searchButton{
-    width: 10%;
-    padding: 1% 0;
-    margin: 0 0 0 0.5%;
-    font-size: 1vw;
-    border: none;
-    border-radius: 0.3vw;
-    color: white;
-    background-color: #1b63ff;
-    cursor: pointer;
-}
-#searchButton:hover{
-    background-color: #2724d6;
-    color: rgb(224, 224, 224); 
-}
-.depart-parent{
+
+/* 
+facultu div */
+
+.dept-faculty-parent {
+    width: 100%;
+    height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dept-faculty-child{
+    box-shadow: 0 0 10px lightgray;
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 1%;
+}
+.faculty-box{
+    background-color: #1ebbeb;
+    color: #fff;
+    width: 45%;
+    margin: 1%;
+    text-align: center;
+    padding: 1%;
+    font-size: 1.2vw;
+}
+.faculty-box:hover{
+    background-color: #ffffff;
+    box-shadow: 0 0 5px gray;
+    color: #000;
+    transform: scale(1.05);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+.faculty-box h3{
+    padding-top: 1%;
+}
+
+
+
+.depart-parent{
+    display: none;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -341,6 +354,7 @@ main{
     margin-top: 3%;
     box-shadow: 0px 0px 15px gray;
     border-radius: 10px;
+    display: none;
 }
 .depart-box h3{
     font-size: 1.8vw;
@@ -409,6 +423,113 @@ main{
 .bg-department-video:hover{
     scale: 1.02;
 }
+
+
+
+.dept-dialog-parent {
+    width: 100%;
+    height: 95vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -2%;
+    z-index: 1;
+    overflow: hidden;
+}
+.dept-dialog-parent::after{
+    content: '';
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+.dept-dialog-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 70%;
+    padding: 2%;
+    position: relative;
+    box-shadow: 0 0 10px rgb(201, 201, 201);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+
+.dept-years {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 5px; 
+    padding: 10px; 
+    border: 1px solid green; 
+    width: 70%; 
+    border-radius: 5px;
+    background-image: linear-gradient(45deg,#4256B5, #9445CB);
+    cursor: pointer;
+}
+.dept-years:hover{
+    background-image: linear-gradient(45deg,#3f74c4, #bc3ee2);
+    transform: scale(0.98);
+    border: none;
+    outline: none;
+}
+.dept-years h3{
+    font-size: 2vw;
+}
+.dept-dialog-child  i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.5vw;
+    color: #9445CB;
+    padding: 10px;
+    cursor: pointer;
+}
+.dept-dialog-child  i:hover{
+    color: red;
+    transform: scale(1.1);
+}
+
+.semester-box{
+    background-image: linear-gradient(45deg, #C8248F,#282C72);
+    position: absolute;
+    top: 25%;
+    width: 50%;
+    height: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    opacity: 0.92;
+}
+.semester{
+    width: 70%;
+    font-size: 1.5vw;
+    text-align: center;
+    padding: 4%;
+    border-radius: 5px;
+    color: #fff;
+    background-image: linear-gradient(90deg, #4DB5FD,#3E64F9);
+    cursor: pointer;
+}
+.semester:hover{
+    background-image: linear-gradient(-90deg, #4DB5FD,#3E64F9);
+    transform: scale(0.95);
+    transition: all ease 0.2s;
+}
+
+
+
+
 
 
 
