@@ -1,0 +1,55 @@
+.semester-container h1{
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 7%;
+}
+.semester-container h2{
+    font-size: 1.5vw;
+    text-align: center;
+    margin-top: 2%;
+    color: #1ebbeb;
+    animation: course 2s  0s infinite linear;
+}
+@keyframes course {
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.table-container{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#table-container{
+    width: 80%;
+    height: auto;
+    border-spacing: 0;
+    border: 5px solid white;
+    border-radius: 5px;
+}
+#table-container th{
+    font-size: 2vw;
+    font-weight: bold;
+}
+#table-container th, td{
+    font-size: 1.2vw;
+    text-align: center;
+    padding: 2%;
+    background-color:rgb(234, 251, 255);
+    border: 0.3vw solid #ffffff;
+    transition: all 0.3s ease;
+}
+#table-container td:hover{
+    background-color:#6edbfc;
+}

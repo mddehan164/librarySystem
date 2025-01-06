@@ -1,57 +1,55 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>
-        How to disable scrolling
-        temporarily using JavaScript?
-    </title>
-    <style>
-        .scrollable-place {
-            height: 1000px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
-
 <body>
-    <h1 style="color: green">
-        GeeksforGeeks
-    </h1>
-
-    <b>
-        How to disable scrolling temporarily
-        using JavaScript?
-    </b>
-    <p>Click on the buttons below to 
-        enable or disable scrolling.</p>
-
-    <p class="scrollable-place">
-        <button onclick="disableScroll()">
-            Disable Scrolling</button>
-        <button onclick="enableScroll()">
-            Enable Scrolling</button>
-    </p>
-
-    <script>
-        function disableScroll() {
-            // Get the current page scroll position
-            scrollTop =
-                window.pageYOffset ||
-                document.documentElement.scrollTop;
-            scrollLeft =
-                window.pageXOffset ||
-                document.documentElement.scrollLeft,
-           // if any scroll is attempted,
-                // set this to the previous value
-                window.onscroll = function () {
-                    window.scrollTo(scrollLeft, scrollTop);
-                };
-        }
-
-        function enableScroll() {
-            window.onscroll = function () { };
-        }
-    </script>
+    
+    <div class="semester-container">
+        <h1><span style="color: #2bec4b;">On</span>line <span style="color: #4217ee;">Library</span> </h1>
+        <h2>Define Your Course</h2>
+        <div class="table-container">
+            <table id="table-container">
+                <thead>
+                    <tr>
+                        <th>Serial No</th>
+                        <th>Course Name</th>
+                        <th>Read</th>
+                        <th>Download</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Bangla Literature</td>
+                        <td><a href="#">Read</a></td>
+                        <td><a href="#">Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Bangla Literature</td>
+                        <td><a href="#">Read</a></td>
+                        <td><a href="#">Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Bangla Literature</td>
+                        <td><a href="#">Read</a></td>
+                        <td><a href="#">Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Bangla Literature</td>
+                        <td><a href="#">Read</a></td>
+                        <td><a href="#">Download</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </body>
-
 </html>

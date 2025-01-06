@@ -13,7 +13,7 @@
 </head>
 <body>
     <nav class="nav-bar">
-        <div class="logo" id="logo"><a href="#home-page">Logo</a></div>
+        <div class="logo" id="logo"><a href="#home-page"><span style="color: #2bec4b;">On</span>line <span style="color: #4217ee;">Library</span></a></div>
         <div class="nav-items">
             <i class="ri-menu-line" id="menuBtn"></i>
             <a class="nav-link" id="departmentBtn" href="#departments">Faculties</a>
@@ -24,10 +24,10 @@
     </nav>
     <div class="side-bar">
         <i class="ri-close-large-fill" id="closeBtn"></i>
-        <a href="#departments" id="sideBarDepartments">Faculties</a>
-        <a href="#aboutUs">About Us</a>
-        <a href="#contactUs">Contact Us</a>
-        <a href="#login" id="sideBarLogin">Login</a>
+        <a class="side-nav" href="#departments" id="sideBarDepartments">Faculties</a>
+        <a class="side-nav" href="#aboutUs">About Us</a>
+        <a class="side-nav" href="#contactUs">Contact Us</a>
+        <a class="side-nav" href="#login" id="sideBarLogin">Login</a>
     </div>
     <main>
         <div id="home-page">
@@ -438,7 +438,48 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="semester-container">
+                    <h1><span style="color: #2bec4b;">On</span>line <span style="color: #4217ee;">Library</span> </h1>
+                    <h2>Define Your Course</h2>
+                    <div class="table-container">
+                        <table id="table-container">
+                            <thead>
+                                <tr>
+                                    <th>Serial No</th>
+                                    <th>Course Name</th>
+                                    <th>Read</th>
+                                    <th>Download</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Bangla Literature</td>
+                                    <td><a href="#">Read</a></td>
+                                    <td><a href="#">Download</a></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Bangla Literature</td>
+                                    <td><a href="#">Read</a></td>
+                                    <td><a href="#">Download</a></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Bangla Literature</td>
+                                    <td><a href="#">Read</a></td>
+                                    <td><a href="#">Download</a></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Bangla Literature</td>
+                                    <td><a href="#">Read</a></td>
+                                    <td><a href="#">Download</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
                     <!--Depart Years-->
                     <div class="dept-dialog-parent">
                         <div class="dept-dialog-child">
@@ -463,9 +504,9 @@
                             <div class="semester">
                                 <h4>1st Semester</h4>
                             </div>
-                            </div>
                         </div>
-                       </div> 
+                        </div>
+                    </div> 
                 <video autoplay loop muted class="bg-department-video">
                     <source src="videos/department.mp4" type="video/mp4">
                 </video>
