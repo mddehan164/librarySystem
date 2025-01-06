@@ -215,6 +215,14 @@ let deparBoxArr = Array.from(departBoxes);
             })
         })
     })
+
+
+    // handle semester btn
+
+
+    let semesterBtn1 = document.getElementById('semesterBtn1');
+    let semesterBtn2 = document.getElementById('semesterBtn2');
+    let semesterMessage = document.getElementById("semesterMessage");
 //handle department boxes
 
 // let depChild = document.getElementsByClassName('dep-child');

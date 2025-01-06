@@ -130,8 +130,10 @@ main{
     margin: 5% 0;
 }
 .text p{
-    font-size: 1.2vw;
+    font-size: 1vw;
+    padding-right: 10px;
     color: #190000;
+    text-align: justify;
 }
 #getStarted{
     margin-top: 5%;
@@ -517,9 +519,12 @@ facultu div */
     text-align: center;
     padding: 4%;
     border-radius: 5px;
-    color: #fff;
     background-image: linear-gradient(90deg, #4DB5FD,#3E64F9);
     cursor: pointer;
+}
+.semester a{
+    text-decoration: none;
+    color: #fff;
 }
 .semester:hover{
     background-image: linear-gradient(-90deg, #4DB5FD,#3E64F9);
@@ -527,9 +532,6 @@ facultu div */
     transition: all ease 0.2s;
 }
 
-.semester-container{
-    display:;
-}
 .semester-container h1{
     font-size: 3vw;
     text-align: center;
@@ -584,6 +586,10 @@ facultu div */
 }
 #table-container td:hover{
     background-color:#6edbfc;
+    cursor: pointer;
+}
+#table-container img:hover{
+    background-color: #ffffff;
 }
 
 
