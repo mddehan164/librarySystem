@@ -39,11 +39,11 @@
     border-radius: 5px;
 }
 #table-container th{
-    font-size: 2vw;
+    font-size: 25px;
     font-weight: bold;
 }
-#table-container th, td{
-    font-size: 1.2vw;
+#table-container td{
+    font-size: 20px;
     text-align: center;
     padding: 2%;
     background-color:rgb(234, 251, 255);
