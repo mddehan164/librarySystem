@@ -471,7 +471,6 @@ facultu div */
     text-align: center;
     margin: 5px; 
     padding: 10px; 
-    border: 1px solid green; 
     width: 70%; 
     border-radius: 5px;
     background-image: linear-gradient(45deg,#4256B5, #9445CB);
@@ -583,6 +582,10 @@ facultu div */
     background-color:rgb(234, 251, 255);
     border: 0.3vw solid #ffffff;
     transition: all 0.3s ease;
+}
+#table-container a{
+    text-decoration: none;
+    color: #000;
 }
 #table-container td:hover{
     background-color:#6edbfc;

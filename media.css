@@ -9,7 +9,7 @@
         box-sizing: border-box;
     }
     .logo a{
-        font-size: 8vw;
+        font-size: 6vw;
         font-weight: bold;
     }
     .nav-link{
@@ -180,7 +180,7 @@
         width: 100%;
         text-align: center;
         margin: 0;
-        font-size: 10vw;
+        font-size: 8vw;
         font-weight: bold;
     }
      #searchBox{
@@ -261,13 +261,129 @@
 
     
     #departments h2{
-        font-size: 5vw;
-        text-align: center;
-        margin-left: 28%;
-        margin-bottom: 10%;
+        font-size: 7vw;
+        margin-left: 0%;
+        margin-bottom: 0%;
         display: initial;
         padding: 0;
     }
+
+    /* 
+facultu div */
+
+.dept-faculty-parent {
+    height: 90vh;
+}
+.dept-faculty-child{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 2%;
+    margin-top: 50px;
+    overflow: auto;
+}
+.faculty-box{
+    background-color: #1ebbeb;
+    color: #fff;
+    width: 99%;
+    margin: 1%;
+    text-align: center;
+    padding: 4%;
+    font-size: 5vw;
+}
+
+.faculty-box h3{
+    padding-top: 1%;
+}
+
+
+.dept-dialog-parent {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+}
+.dept-dialog-parent::after{
+    content: '';
+    background-color: rgba(47, 57, 83, 0.7);
+}
+
+.dept-dialog-child {
+    width: 85%;
+    height: 350px;
+    padding: 2%;
+}
+
+
+.dept-years {
+    margin: 0px; 
+    padding: 10px; 
+    width: 90%; 
+}
+
+.dept-years h3{
+    font-size: 6vw;
+}
+.dept-dialog-child  i{
+    font-size: 6vw;
+    padding: 5px;
+}
+
+
+
+.semester-box{
+    top: 25%;
+    width: 80%;
+    height: 50%;
+    border-radius: 5px;
+    opacity: 0.92;
+}
+.semester{
+    width: 80%;
+    font-size: 6vw;
+    text-align: center;
+    padding: 5%;
+}
+.semester a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.semester-container h1{
+    font-size: 10vw;
+    margin-top: 25%;
+}
+.semester-container h2{
+    font-size: 7vw;
+    text-align: center;
+    margin-top: 4%;
+}
+
+.table-container{
+    width: 100%;
+    height: auto;
+    margin-top: 12%;
+}
+#table-container{
+    width:90%;
+    height: auto;
+}
+
+#table-container td{
+    font-size: 4.5vw;
+    text-align: justify;
+    padding: 5%;
+}
+#table-container th{
+    font-weight: bold;
+    font-size: 5vw;
+    padding: 0;
+}
+
+
+
 
 
     footer{
@@ -506,6 +622,109 @@
             display: initial;
             padding: 0;
         }
+
+
+            /* 
+facultu div */
+
+.dept-faculty-parent {
+    height: auto;
+}
+.dept-faculty-child{
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 2%;
+    margin-top: 50px;
+    overflow: auto;
+}
+.faculty-box{
+    background-color: #1ebbeb;
+    color: #fff;
+    width: 99%;
+    margin: 1%;
+    text-align: center;
+    padding: 3%;
+    font-size: 3vw;
+}
+
+.faculty-box h3{
+    padding-top: 1%;
+}
+
+
+.dept-dialog-parent {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+}
+
+.dept-dialog-child {
+    width: 80%;
+    height: 20%;
+    padding: 2%;
+}
+
+
+.dept-years {
+    margin: 0px; 
+    padding: 10px; 
+    width: 80%; 
+}
+
+.dept-years h3{
+    font-size: 5vw;
+}
+.dept-dialog-child  i{
+    font-size: 5vw;
+    padding: 5px;
+}
+
+
+
+.semester-box{
+    top: 25%;
+    width: 80%;
+    height: 50%;
+    border-radius: 5px;
+    opacity: 0.92;
+}
+.semester{
+    width: 70%;
+    font-size: 5vw;
+    text-align: center;
+    padding: 2%;
+}
+
+.semester-container h1{
+    font-size: 8vw;
+    margin-top: 20%;
+}
+.semester-container h2{
+    font-size: 4vw;
+    text-align: center;
+    margin-top: 4%;
+}
+
+.table-container{
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+}
+#table-container{
+    width:90%;
+    height: auto;
+}
+
+#table-container td{
+    font-size: 2vw;
+    text-align: center;
+    padding: 3%;
+}
+#table-container th{
+    font-weight: bold;
+    font-size: 2.9vw;
+}
     
     
         footer{
@@ -529,203 +748,6 @@
     }
     
     
-@media (min-width:577px) and (max-width:768px) {
-        .nav-bar{
-            width: 100%;
-            padding: 2.2% 1%;
-        }
-        .logo a{
-            font-size: 3vw;
-        }
-        .nav-link{
-            padding: 1.5vw;
-            margin: 0 1vw;
-            font-size: 2vw;
-        }
-    
-        #menuBtn{
-            display: none;
-        }
-    
-    
-        #home-page{
-            margin-top: 8%;
-            background-size: 35%;
-            background-position: 115% 30%;
-        }
-        .bg-illustrator{
-            width: 50%;
-        }
-        .bg-illustrator img{
-            width: 93%;
-            margin-top: 15%;
-        }
-        .text{
-            width: 50%;
-        }
-        .text h2{
-            margin-top: 10%;
-            font-size:4vw;
-            
-        }
-        .text h1{
-            font-size: 5vw;
-            margin: 5% 0;
-        }
-        .text p{
-            font-size: 2vw;
-        }
-        #getStarted{
-            margin-top: 6%;
-            padding: 3% 4%;
-            font-size: 3vw;
-        }
-    
-    
-    
-        #signUp{
-            margin: 6% 1%;
-            padding: 5% 3%;
-            background-position:  100% 40%;
-            background-repeat: no-repeat;
-        }
-        #signUp h1{
-            margin: 2% 0 8% 10%;
-            padding: 0 0 3% 0;
-        }
-        #signUp label{
-            width: 25%;
-            font-size: 2vw;
-        }
-        #signUp input{
-            width: 60%;
-            padding: 2% 1%;
-            margin: 1% 0;
-            font-size: 1.8vw;
-            opacity: 0.3;
-            border: none;
-            border-radius: 0.7vw;
-        }
-        #signUp input::placeholder{
-            font-size: 1.8vw;
-        }
-        #signUpBtn{
-            margin: 4% 0 0 62.5%;
-            padding: 3% 6%;
-            border-radius: 0.7vw;
-            font-size: 1.8vw;
-        }
-
-        #login-box{
-            margin-top: 22%;
-            width: 100%;
-            height: auto;
-        }
-        .bg-login-video{
-            top: 18%;
-            left: 10%;
-            z-index: -1;
-            width: 80%;
-            border-radius: 1.1vw;
-            transform: scaleY(1);
-        }
-        #login-form{
-            width: 80%;
-            height: auto;
-            margin-top: 0%;
-            margin-left: 10%;
-        }
-        #login-form label{
-            font-size: 3vw;
-        }
-        #login-form input{
-            width: 60%;
-            border-radius: 0.6vw;
-            font-size: 2.5vw;
-            opacity: 0.6;
-            margin: 1%;
-        }
-        #login-form input::placeholder{
-            font-size: 2.5vw;
-        }
-        #loginBtn{
-            margin: 4% 0 0 78%;
-            padding: 2.5% 5%;
-            font-size: 2.5vw;
-        }
-
-        #departments{
-            position: relative;
-            width: 100%;
-            margin-top: 15%;
-            
-        }
-        #departments h1{
-            display: block;
-            width: 100%;
-            text-align: center;
-            margin: 0;
-            font-size: 6vw;
-        }
-         #searchBox{
-            width: 35%;
-            padding: 2% 2%;
-            margin: 2% 1%  1.5% 21%;
-            font-size: 3vw;
-            border-radius: 1vw;
-        }
-        #searchButton{
-            width: 20%;
-            padding: 2% 3%;
-            margin: 0 0 0 1%;
-            font-size: 3vw;
-            border-radius: 1vw;
-        }
-    
-    
-        .depart-box{
-            width: 90%;
-            margin-top: 10%;
-            border-radius: 10px;
-        }
-        .depart-box h3{
-            font-size: 4.5vw;
-            text-align: center;
-            padding: 0;
-            margin-top: 5%;
-        }
-        .depart-child{
-            border: 1px solid #e0e0e0;
-            width: 80%;
-            display: initial;
-            margin: 3% 10%;
-            padding: 1%;   
-        }
-        .depart-child img{
-            border: 2px solid rgb(233, 233, 233);
-            width: 90%;
-            height: 45vw;
-            margin: 5%;
-        }
-        .depart-child h5{
-            font-size: 4vw;
-            display: block;
-            width: 95%;
-            padding: 3% 0%;
-            text-align: center;
-            margin: 2% 2%;
-        }
-      
-    
-
-
-    footer{
-        margin-top: 6%;
-        padding-top: 15%;
-        font-size: 3vw;
-    }
-    
-}
 
 @media (min-width:769px) and (max-width:992px){
     .nav-bar{
@@ -929,6 +951,117 @@
         border-radius: 1vw;
         border-top: 4px solid #034ef1;
     }
+
+
+        /* 
+facultu div */
+
+.dept-faculty-parent {
+    height: 100%;
+}
+.dept-faculty-child{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 2%;
+    margin-top: 50px;
+}
+.faculty-box{
+    background-color: #1ebbeb;
+    color: #fff;
+    width: 45%;
+    margin: 1%;
+    text-align: center;
+    padding: 2%;
+    font-size: 2vw;
+}
+
+.faculty-box h3{
+    padding-top: 1%;
+}
+
+
+.dept-dialog-parent {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+}
+.dept-dialog-parent::after{
+    content: '';
+    background-color: rgba(47, 57, 83, 0.7);
+}
+
+.dept-dialog-child {
+    width: 65%;
+    height: 50%;
+    padding: 2%;
+}
+
+
+.dept-years {
+    margin: 0px; 
+    padding: 20px; 
+    width: 90%; 
+}
+
+.dept-years h3{
+    font-size: 4vw;
+}
+.dept-dialog-child  i{
+    font-size: 3vw;
+    padding: 10px;
+}
+
+
+
+.semester-box{
+    top: 25%;
+    width: 80%;
+    height: 50%;
+    border-radius: 5px;
+    opacity: 0.92;
+}
+.semester{
+    width: 70%;
+    font-size: 4vw;
+    text-align: center;
+    padding: 3%;
+}
+
+.semester-container h1{
+    font-size: 7vw;
+    margin-top: 15%;
+}
+.semester-container h2{
+    font-size: 4vw;
+    text-align: center;
+    margin-top: 4%;
+}
+
+.table-container{
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+}
+#table-container{
+    width:90%;
+    height: auto;
+}
+
+#table-container td{
+    font-size: 2.1vw;
+    text-align: center;
+    padding: 2%;
+}
+#table-container th{
+    font-weight: bold;
+    font-size: 2.5vw;
+    padding: 1%;
+    text-align: center;
+}
     
     
     footer{
